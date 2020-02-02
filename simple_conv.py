@@ -34,3 +34,16 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print(test_acc)
 
 model.save('kimchi.h5')
+
+
+model = models.Sequential()
+model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
+model.add(layers.Dense(16, activation='relu'))
+model.add(layers.Dense(1, activation='sigmoid'))
+
+model = models.Sequential()
+model.add(layers.Dense(6, activation='relu', input_shape=(10000,)))
+model.add(layers.Dense(6, activation='relu'))
+model.add(layers.Dense(1, activation='sigmoid'))
+
+
