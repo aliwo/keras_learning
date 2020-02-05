@@ -16,7 +16,7 @@ for sample in samples:
             # 인덱스 0은 사용하지 않습니다.
 
 # 샘플을 벡터로 변환합니다.
-# 각 샘플에서 max_length 까지 단어만 사용합니다.b
+# 각 샘플에서 max_length 까지 단어만 사용합니다.
 max_length = 10
 
 # 결과를 저장할 배열입니다
